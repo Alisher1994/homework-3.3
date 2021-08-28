@@ -1,0 +1,113 @@
+.container {
+    padding: 0;
+    display: flex;
+    max-width: 976px;
+}
+
+.container-left {
+    margin-right: 40px;
+
+}
+
+.h3 {
+    margin-top: 25px;
+}
+
+.span {
+    width: 284px;
+    height: 74px;
+    padding: 13px 18px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+}
+
+.span a:hover {
+    transition: 0.35s;
+    color: rgb(165, 24, 24);
+}
+
+.span:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.span:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.container-right {
+    width: 651px;
+    margin: 0 auto;
+    margin-left: 40px;
+    justify-content: center;
+
+}
+
+.top {
+    width: 650px;
+}
+
+.p-text {
+    font-size: 18px;
+    color: #414141;
+    line-height: 21px;
+    font-style: normal;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-family: "Arial", sans-serif;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-year, .card-rating {
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+
+.card-year::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./../img/calendar.svg);
+}
+
+.card-rating::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./../img/star.svg);
+}
+
+.btn-toolbar {
+    display: flex;
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.btn-group > .btn-primary  {
+    color: #0a53be;
+    background-color: #ffffff;
+}
+
+.btn-group > .btn-primary:nth-child(1)  {
+    color: #ffffff;
+    background-color: #0d6efd;
+}
